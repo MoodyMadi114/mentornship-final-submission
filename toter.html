@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toter.com</title>
+    <link rel="stylesheet" href="toter.css">
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" active", "");
+             }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Toter.com</div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.toter.com/">Home</a></li>
+                    <li><a href="https://www.toter.com/about-us">About</a></li>
+                    <li><a href="https://www.toter.com/services">Services</a></li>
+                    <li><a href="https://www.toter.com/request-quote">request quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+       
+    
+
+    <section class="hero">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="D:\internship mentormind\Toter_PRO_FEL_Container.png" style="width:100%">
+            <div class="text">front end load containers</div>
+        </div>
+      
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="D:\internship mentormind\R.png" style="width:100%">
+            <div class="text">round trash cans</div>
+        </div>
+      
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="D:\internship mentormind\horz_1.png" style="width:100%">
+            <div class="text">slimline containers</div>
+        </div>
+      
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+      
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <br>
+    
+
+
+
+        <div class="container">
+            <div class="hero-text">
+                <h1>Welcome to Toter.com</h1>
+                <p>Built for Extremes</p>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="D:\internship mentormind\OIP.jfif" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="container1">
+                <div class="feature">
+                    <img src="D:\internship mentormind\icons8-home-150.png" alt="Feature 1">
+                    <h2>Homeowners</h2>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="feature">
+                    <img src="D:\internship mentormind\icons8-government-80.png" alt="Feature 2">
+                    <h2>Government</h2>
+                </div>
+             </div>
+            <div class="container3">
+                <div class="feature">
+                    <img src="D:\internship mentormind\icons8-truck-48.png" alt="Feature 3">
+                    <h3>Waste Haulers</h3>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="feature">
+                    <img src="D:\internship mentormind\icons8-manufacturing-50.png" alt="Feature 3">
+                    <h3>Industrial and Commercial</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="https://www.toter.com/">Home</a></li>
+                <li><a href="https://www.toter.com/about-us">About</a></li>
+                <li><a href="https://www.toter.com/services">Services</a></li>
+                <li><a href="https://www.toter.com/request-quote">request quote</a></li>
+            </ul>
+            <div class="location">
+                <img src="D:\internship mentormind\icons8-location-50.png" alt="Location">
+                <h5>841 Meacham Road
+                    Statesville, NC 28677</h5><br>
+            </div>
+            <div class="phone">
+                <img src="D:\internship mentormind\icons8-phone-50.png" alt="Number">
+                <h5>800-424-0422</h5><br>
+            </div>
+            <div class="social-media">
+
+                <a href="https://www.facebook.com/ToterCarts/"><img src="D:\internship mentormind\icons8-facebook-50.png" alt="Facebook"></a>
+                <a href="https://twitter.com/toterllc?lang=en"><img src="D:\internship mentormind\icons8-twitter-50.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/showcase/toter/"><img src="D:\internship mentormind\icons8-linkedin-64.png" alt="Linkedin"></a>
+                <a href="https://www.youtube.com/user/TheWastequip"><img src="D:\internship mentormind\icons8-youtube-50.png" alt="YouTube"></a>
+            </div>
+            <p>© 2024 Toter.com All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
